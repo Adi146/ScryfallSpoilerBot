@@ -1,9 +1,10 @@
 package main
 
 import (
-	"SkryfallSpoilerBot/Messenger"
 	"encoding/json"
 	"io/ioutil"
+
+	"github.com/Adi146/ScryfallSpoilerBot/Messenger"
 
 	"gopkg.in/yaml.v2"
 )
