@@ -21,6 +21,7 @@ func main() {
 	ConfigFile := flag.String("config", DefaultConfigFile, "path to yaml config file")
 	SpoiledCardsFile := flag.String("spoiledCards", DefaultSpoiledCardsFile, "path to json spoiled cards file")
 	LogFile := flag.String("logFile", DefaultLogFile, "path to log file")
+	flag.Parse()
 
 	sigs := make(chan os.Signal, 1)
 	signal.Notify(sigs, syscall.SIGINT, syscall.SIGTERM)
